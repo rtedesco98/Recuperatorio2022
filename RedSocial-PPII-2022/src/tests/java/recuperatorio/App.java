@@ -1,8 +1,20 @@
 package tests.java.recuperatorio;
+import main.java.recuperatorio.*;
+
+import org.junit.*;
 
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-    }
+   @Test
+   public void debeSeguirUsuario(){
+    Perfil miPerfil = new Perfil ();
+    Usuario usuario = new Usuario ();
+    miPerfil.debeSeguirUsuario(usuario);
+
+    assert
+
+
+   }
+
+
 }
