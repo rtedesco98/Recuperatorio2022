@@ -3,14 +3,18 @@ package main.java.recuperatorio;
 
 
 public class Perfil {
-
-  
     private String nickname;
     private String nombre;
     private String apellido;
     private String descripcion;
-    
-    
+    private Ubicacion ubicacion;
+
+    public Ubicacion getUbicacion() {
+        return ubicacion;
+    }
+    public void setUbicacion(Ubicacion ubicacion) {
+        this.ubicacion = ubicacion;
+    }
 
     public String getNickname() {
         return nickname;
