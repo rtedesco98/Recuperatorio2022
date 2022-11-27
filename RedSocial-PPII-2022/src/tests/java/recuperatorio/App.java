@@ -16,5 +16,11 @@ public class App {
 
    }
 
+   @Test
+   public void debeColorarUnaEtiqueta(){
+
+
+    
+   }
 
 }
