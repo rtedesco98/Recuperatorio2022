@@ -5,14 +5,14 @@ import org.junit.*;
 
 
 public class App {
+
+
    @Test
-   public void debeSeguirUsuario(){
+    public void debeSeguirUsuario(){
     Perfil miPerfil = new Perfil ();
     Usuario usuario = new Usuario ();
-    miPerfil.debeSeguirUsuario(usuario);
-
-    assert
-
+    miPerfil.SeguirUsuario(Usuario);
+    assertTrue(miPerfil.getSeguidos() == 1);
 
    }
 
