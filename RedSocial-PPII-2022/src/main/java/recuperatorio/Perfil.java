@@ -9,6 +9,17 @@ public class Perfil {
     private String descripcion;
     private Ubicacion ubicacion;
 
+
+    public Perfil(String nickname, String nombre, String apellido, String descripcion, Ubicacion ubicacion) {
+        this.setNickname(nickname);
+        this.setNombre(nombre);
+        this.setApellido(apellido);
+        this.setDescripcion(descripcion);
+        this.setUbicacion(ubicacion);
+        }
+        
+
+
     public Ubicacion getUbicacion() {
         return ubicacion;
     }
