@@ -1,5 +1,7 @@
 package main.java.recuperatorio;
 
+import java.util.ArrayList;
+
 public class Usuario {
     private String nombre;
     private String apellido;
@@ -56,6 +58,6 @@ public class Usuario {
     public void SeguirUsuario(){
 
 
-        
+
     }
 }
