@@ -53,4 +53,9 @@ public class Usuario {
     }
 
 
+    public void SeguirUsuario(){
+
+
+        
+    }
 }

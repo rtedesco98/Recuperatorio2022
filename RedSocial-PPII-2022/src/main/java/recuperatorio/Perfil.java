@@ -18,8 +18,6 @@ public class Perfil {
         this.setUbicacion(ubicacion);
         }
         
-
-
     public Ubicacion getUbicacion() {
         return ubicacion;
     }
