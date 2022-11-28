@@ -2,12 +2,19 @@ package main.java.recuperatorio;
 
 public class Usuario {
     private String nombre;
-
     private String apellido;
-
     private int seguidores;
-
     private int seguidos;
+
+    private int nickname;
+
+    public Usuario (String nombre, String apellido, int seguidores, int seguidos, int nickname){
+        this.setNombre(nombre);
+        this.setApellido(apellido);
+        this.setSeguidores(seguidores);
+        this.setSeguidos(seguidos);
+        this.setNickname(nickname);
+        }
 
     public String getNombre() {
         return nombre;
@@ -29,7 +36,7 @@ public class Usuario {
     public void setSeguidores(int seguidores) {
         this.seguidores = seguidores;
     }
-    
+
     public int getSeguidos() {
         return seguidos;
     }
@@ -37,4 +44,13 @@ public class Usuario {
         this.seguidos = seguidos;
     }
     
+
+    public int getNickname() {
+        return nickname;
+    }
+    public void setNickname(int nickname) {
+        this.nickname = nickname;
+    }
+
+
 }
