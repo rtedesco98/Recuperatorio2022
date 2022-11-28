@@ -7,8 +7,10 @@ public class Usuario {
     private String apellido;
     private int seguidores;
     private int seguidos;
-
     private int nickname;
+    ArrayList <Seguido> seguidosList = new ArrayList<Seguido>();
+
+
 
     public Usuario (String nombre, String apellido, int seguidores, int seguidos, int nickname){
         this.setNombre(nombre);
@@ -56,8 +58,7 @@ public class Usuario {
 
 
     public void SeguirUsuario(){
-
-
+     
 
     }
 }
