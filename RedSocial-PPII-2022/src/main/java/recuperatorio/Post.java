@@ -3,38 +3,38 @@ package main.java.recuperatorio;
 public class Post {
     private String descripcion;
 
-    //private Object quitarMeGusta;
- 
     public String descripcion() {
  
      return descripcion;
- }
- public void setdescripcion(String descripcion) {
+    }
+
+    public void setdescripcion(String descripcion) {
  
      this.descripcion = descripcion;
- }
- public void quitarMeGusta(){
+    }
+
+
+    public void quitarMeGusta(Megusta megusta){
+        
+    this.megusta.remove(megusta);
  
- //Object quitarMeGusta;
+    }
  
- this.quitarMeGusta = quitarMeGusta();
+    public void meGusta(){
  
- }
+    this.meGusta = meGusta();
  
- public void meGusta(){
+    }
  
- this.meGusta = meGusta();
+    public void agregarEtiqueta(){
  
- }
+    this.agregarEtiqueta() = agregarEtiqueta();
  
- public void agregarEtiqueta(){
- 
- this.agregarEtiqueta() = agregarEtiqueta();
- 
- }
- public void comentarPublicacion(){
+    }
+
+    public void comentarPublicacion(){
      
- this.comentarPublicacion();  comentarPublicacion();
+    this.comentarPublicacion();  comentarPublicacion();
  
- }
+    }
 }
