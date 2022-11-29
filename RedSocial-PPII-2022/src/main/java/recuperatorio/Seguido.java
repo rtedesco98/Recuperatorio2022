@@ -5,7 +5,6 @@ public class Seguido {
 
     public Seguido(String nickname){
         this.setNickname(nickname);
-
     }
 
 
