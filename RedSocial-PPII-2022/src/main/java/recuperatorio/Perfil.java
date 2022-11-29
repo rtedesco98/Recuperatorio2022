@@ -10,7 +10,7 @@ public class Perfil {
     private Ubicacion ubicacion;
 
 
-    public Perfil(String nickname, String nombre, String apellido, String descripcion, Ubicacion ubicacion) {
+    public Perfil(String nickname, String nombre, String apellido, String descripcion, String string) {
         this.setNickname(nickname);
         this.setNombre(nombre);
         this.setApellido(apellido);
@@ -52,6 +52,4 @@ public class Perfil {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-
-
 }

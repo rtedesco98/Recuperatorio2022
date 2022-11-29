@@ -8,6 +8,10 @@ public class Seguido {
     }
 
 
+    public Seguido(int nickname2) {
+    }
+
+
     public String getNickname() {
         return nickname;
     }
