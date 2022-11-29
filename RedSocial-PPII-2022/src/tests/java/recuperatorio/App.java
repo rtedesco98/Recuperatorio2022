@@ -9,16 +9,19 @@ import org.junit.*;
 public class App {
 
 
+   /**
+    * 
+    */
    @Test
     public void debeSeguirUsuario(){
-    Usuario usuario = new Usuario (null, null, 0, 0, 0);
-    usuario.SeguirUsuario(usuario);
-    assertTrue(usuario.getSeguidos() == 1);
+    Usuario miUsuario = new Usuario (null, null, 0, 0, 0);
+    miUsuario.SeguirUsuario(miUsuario);
+    assertTrue(miUsuario.getSeguidos() == 1);
    }
 
    @Test
    public void debeColorarUnaEtiqueta(){
-
+   
 
     
    }
