@@ -57,8 +57,13 @@ public class Usuario {
     }
 
 
-    public void SeguirUsuario(){
+    public void SeguirUsuario(Usuario seguido){
+     this.seguidosList.add(new Seguido(seguido.getNickname());
+     this.agregarSeguido();
      
+    }
 
+    private void agregarSeguido() {
+        this.setSeguidos(this.getSeguidos()+1);
     }
 }
