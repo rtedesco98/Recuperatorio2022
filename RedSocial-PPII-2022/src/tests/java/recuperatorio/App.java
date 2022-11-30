@@ -43,7 +43,14 @@ public class App {
 
    @Test
    public void debeColorarUnaEtiqueta(){
-   
+      
+      Etiqueta etiqueta1 = new Etiqueta(null);
+
+      Recurso r1 = new Recurso(null);
+      r1.addEtiqueta(etiqueta1);
+
+      assertEquals(etiqueta1, r1.getEtiquetas.get().toString());
+
    }
 
    @Test
