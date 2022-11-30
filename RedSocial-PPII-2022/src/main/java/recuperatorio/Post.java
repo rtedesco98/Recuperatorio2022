@@ -3,18 +3,26 @@ package main.java.recuperatorio;
 import java.time.LocalDate;
 
 public class Post {
-    private String descripcion;
+    private String contenido;
     
     public Post(String contenido, LocalDate fecha) {
     }
 
-    public String descripcion() {
- 
-     return descripcion;
+    public String contenido() {
+     return contenido;
     }
 
-    public void setdescripcion(String descripcion) {
+    public String getContenido() {
+        return contenido;
+    }
+
+
+    public void setContenido(String contenido) {
  
-     this.descripcion = descripcion;
+     this.contenido = contenido;
+    }
+
+    public Object getFecha() {
+        return null;
     }
 }
