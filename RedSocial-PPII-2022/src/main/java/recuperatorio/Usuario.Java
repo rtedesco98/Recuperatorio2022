@@ -2,8 +2,12 @@ package main.java.recuperatorio;
 
 import java.util.ArrayList;
 import java.time.LocalDate;
+import java.util.*;
 
-public class Usuario {
+import java.util.function.Predicate;
+
+
+public class Usuario implements InterfaceAcciones{
     private String nombre;
     private String apellido;
     private int seguidores;
@@ -89,4 +93,8 @@ public class Usuario {
         post.agregarLikeAPosteo.add(seguido);
     }
     
+    public void quitarLikeAPosteo(){
+        post.quitarLikeAPosteo.remove();
+    }
+
 }
