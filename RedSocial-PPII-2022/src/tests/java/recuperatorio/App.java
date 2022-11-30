@@ -49,7 +49,7 @@ public class App {
       Recurso r1 = new Recurso(null);
       r1.addEtiqueta(etiqueta1);
 
-      assertEquals(etiqueta1, r1.getEtiquetas.get().toString());
+      assertEquals(etiqueta1, ((Recurso) r1.getEtiquetas).getTipoRecurso().toString());
 
    }
 
