@@ -82,6 +82,16 @@ public class App {
    }
 
    @Test
+   public void debeFiltrarPorEtiquetas(){
+
+      Usuario usuario = new Usuario(null, null, null, 0, 0);
+
+
+      Predicate<Post> filtro1 = post.crearFiltroEtiqueta("ucp");
+      assertEquals(usuario, filtro1);
+   }
+
+   @Test
    public void debeComentarUnPost(){
 
    }
@@ -126,9 +136,6 @@ public class App {
 
    }
 
-   @Test
-   public void debeFiltrarPorEtiquetas(){
-
-   }
+ 
 
 }
