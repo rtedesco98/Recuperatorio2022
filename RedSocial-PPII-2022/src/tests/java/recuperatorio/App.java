@@ -4,6 +4,7 @@ import main.java.recuperatorio.*;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 import java.util.function.Predicate;
+import java.time.LocalDate;
 
 import org.junit.*;
 
@@ -19,15 +20,26 @@ public class App {
    @Test
     public void debeSeguirUsuario(){
 
-    Usuario miUsuario = new Usuario (null, null, 0, 0, 0);
-    miUsuario.SeguirUsuario(Usuario);
-    assertTrue(miUsuario.getSeguidos() == 1);
+    Usuario usuario = new Usuario (null, null, null, 0, 0);
+
+    usuario.SeguirUsuario(Usuario);
+
+    assertTrue(usuario.getSeguidos() == 1);
    }
 
    @Test
    public void debeCrearUnPost(){
 
+      LocalDate fecha = LocalDate.now();
+
+      Usuario usuario = new Usuario(null, null, null, 0, 0);
+
+      usuario.crearPost("De paseo por las costas correntinas", fecha);
+
+      assertEquals("De paseo por las costas correntinas", usuario.getPostAcual().getContenido());
+      assertEquals(fecha, usuario.getPostAcual().getFecha());
    }
+
 
    @Test
    public void debeColorarUnaEtiqueta(){
@@ -86,6 +98,11 @@ public class App {
 
    @Test
    public void debeBuscarVideoPorTitulo(){
+
+   }
+
+   @Test
+   public void debeFiltrarPorEtiquetas(){
 
    }
 
