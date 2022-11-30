@@ -11,14 +11,16 @@ import org.junit.*;
 public class App {
 
 
+   private static final Usuario Usuario = null;
+
    /**
     * 
     */
    @Test
     public void debeSeguirUsuario(){
-      
+
     Usuario miUsuario = new Usuario (null, null, 0, 0, 0);
-    miUsuario.SeguirUsuario(miUsuario);
+    miUsuario.SeguirUsuario(Usuario);
     assertTrue(miUsuario.getSeguidos() == 1);
    }
 
