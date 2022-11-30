@@ -4,9 +4,14 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
+import javax.naming.LinkException;
 
-public class Post {
+
+public class Post implements InterfaceAcciones{
     private String contenido;
+
+    private ArrayList<RegistroLikes> likes = new ArrayList<RegistroLikes>();
+    private ArrayList<RegistroLikes> likesAPosteo = new ArrayList<RegistroLikes>();
     
     public Post(String contenido, LocalDate fecha) {
     }

@@ -1,8 +1,8 @@
 package main.java.recuperatorio;
 
 
-public class InterfaceAcciones {
+public interface InterfaceAcciones {
     
-    public void agregarLikeAPosteo();
+    public void agregarLikeAPosteo(Post post);
 
 }
