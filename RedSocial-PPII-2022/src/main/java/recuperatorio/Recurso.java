@@ -5,9 +5,12 @@ import java.util.*;
 public class Recurso {
 
     private String tipoRecurso;
+
     ArrayList <Etiqueta> etiquetasArr = new ArrayList<Etiqueta>();
     ArrayList<Etiqueta> etiquetasArrAux = new ArrayList<Etiqueta>();
+    
     private int contador = 0;
+    public Object getEtiquetas;
 
     public String getTipoRecurso() {
         return tipoRecurso;
@@ -30,7 +33,7 @@ public class Recurso {
 
     public Recurso addEtiqueta(Etiqueta etiqueta) {
             etiquetasArr.add(etiqueta);
-            return this;
+        return this;
     }
     
 }
