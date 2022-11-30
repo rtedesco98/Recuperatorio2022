@@ -55,11 +55,29 @@ public class App {
 
    @Test
    public void debeDarLikeAUnPost(){
+      RegistroLikes likesPost = new RegistroLikes();
+
+      Usuario usuario = new Usuario(null, null, null, 0, 0);
+
+      likesPost.registrarLikeUsuario(usuario);
+      usuario.darLike(usuario.getPostAcual(), likesPost);
+
+      assertEquals(likesPost, usuario);
 
    }
 
    @Test
    public void debeQuitarLikeAUnPost(){
+
+      RegistroLikes likesPost = new RegistroLikes();
+
+      Usuario usuario = new Usuario(null, null, null, 0, 0);
+
+      likesPost.registrarLikeUsuario(usuario);
+      usuario.quitarLike(usuario.getPostAcual(), likesPost);
+
+      assertEquals(likesPost, usuario);
+
 
    }
 

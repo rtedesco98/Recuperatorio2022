@@ -85,5 +85,8 @@ public class Usuario {
         this.setPostActual(post);
     }
 
+    public void agregarLikeAPosteo(Seguido seguido){
+        post.agregarLikeAPosteo.add(seguido);
+    }
     
 }

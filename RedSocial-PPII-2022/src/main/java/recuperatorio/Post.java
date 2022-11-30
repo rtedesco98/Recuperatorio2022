@@ -1,6 +1,9 @@
 package main.java.recuperatorio;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.function.Predicate;
+
 
 public class Post {
     private String contenido;
@@ -24,5 +27,10 @@ public class Post {
 
     public Object getFecha() {
         return null;
+    }
+
+    public void agregarLikeAPosteo(Post post){
+
+        this.likesAPosteo.add(post);
     }
 }
